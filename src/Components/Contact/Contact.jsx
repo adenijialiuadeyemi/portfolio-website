@@ -4,7 +4,7 @@ import { MdOutlineEmail } from 'react-icons/md';
 //import { RiMessengerLine } from 'react-icons/ri';
 import { BsWhatsapp } from 'react-icons/bs';
 import emailjs from '@emailjs/browser';
-import { SERVICE_ID, TEMPLATE_ID, PUBLIC_API } from '../../../config.js';
+//import { SERVICE_ID, TEMPLATE_ID, PUBLIC_API } from '../../../config.js';
 
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -27,10 +27,10 @@ export const Contact = () => {
 
     emailjs
       .sendForm(
-        SERVICE_ID,
-        TEMPLATE_ID,
+        'service_kdo5iam',
+        'template_f2mdfas',
         form.current,
-        PUBLIC_API
+        'oW22g9ipuzXzQFHGL'
       )
       .then(
         (result) => {
