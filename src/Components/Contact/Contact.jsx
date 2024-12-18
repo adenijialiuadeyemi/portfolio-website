@@ -61,7 +61,7 @@ export const Contact = () => {
               Send a mail
             </a>
           </article>
-          
+
           <article className="contact__option">
             <BsWhatsapp className="contact__option-icon" />
             <h4>WhatsApp</h4>
