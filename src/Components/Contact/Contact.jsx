@@ -4,7 +4,7 @@ import { MdOutlineEmail } from 'react-icons/md';
 //import { RiMessengerLine } from 'react-icons/ri';
 import { BsWhatsapp } from 'react-icons/bs';
 import emailjs from '@emailjs/browser';
-import { SERVICE_ID, TEMPLATE_ID, PUBLIC_API } from '../../../config';
+//import { SERVICE_ID, TEMPLATE_ID, PUBLIC_API } from '../../../config';
 
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
