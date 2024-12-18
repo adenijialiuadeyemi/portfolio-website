@@ -17,20 +17,21 @@ export const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
+    // Reset form inputs
     setName('');
     setEmail('');
     setMessage('');
+    // Reset the form
+    form.current.reset();
+    // Show success toast
     toast.success('Thank you for Connecting with Aliu Adeyemi Adeniji!');
-
-    //  form.current.reset(e);
-    // e.target.reset();
 
     emailjs
       .sendForm(
         'service_kdo5iam',
         'template_f2mdfas',
         form.current,
-        'oW22g9ipuzXzQFHGL'
+        'Vpo3D_5TylsYc_06g'
       )
       .then(
         (result) => {
@@ -101,6 +102,10 @@ export const Contact = () => {
             placeholder="Leave a message"
             required
           ></textarea>
+          <input
+            type="hidden"
+            name="from_name"
+            value="Aliu Adeyemi Adeniji" />
           <button type="submit" className="btn btn-primary">
             Send Message
           </button>
