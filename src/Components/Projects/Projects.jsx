@@ -1,7 +1,7 @@
 import React from 'react'
 import './Projects.css'
 import portfolio from '../../assets/Images/portfolio.png'
-import portfolio from '../../assets/Images/project4.png'
+//import project2 from '../../assets/Images/project2.png'
 
 const data = [
   {
