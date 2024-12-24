@@ -1,6 +1,7 @@
 import React from 'react'
 import './Projects.css'
 import portfolio from '../../assets/Images/portfolio.png'
+import portfolio from '../../assets/Images/project4.png'
 
 const data = [
   {
@@ -8,7 +9,14 @@ const data = [
     image: portfolio,
     title: 'Porfolio Website',
     github: '',
-    demo: '',
+    demo: 'https://adeniji-aliu-porfolio.vercel.app/',
+  },
+  {
+    id: 2,
+    image: project4,
+    title: 'Nursing Quiz App',
+    github: '',
+    demo: 'https://nursing-quiz-app.vercel.app/',
   }
 ];
 
@@ -16,10 +24,10 @@ const data = [
 const Projects = () => {
   return (
     <section id='projects'>
-        <h5>My Recent Works</h5>
-        <h2>Projects</h2>
+      <h5>My Recent Works</h5>
+      <h2>Projects</h2>
 
-        <div className="container project_container">
+      <div className="container project_container">
         {data.map(({ id, image, title, github, demo }) => {
           return (
             <article key={id} className="project_item">
@@ -48,7 +56,7 @@ const Projects = () => {
             </article>
           );
         })}
-        </div>
+      </div>
     </section>
   )
 }
