@@ -1,7 +1,7 @@
 import React from 'react'
 import './Projects.css'
 import portfolio from '../../assets/Images/portfolio.png'
-//import project2 from '../../assets/Images/project2.png'
+import project2 from '../../assets/Images/project2.png'
 
 const data = [
   {
@@ -13,7 +13,7 @@ const data = [
   },
   {
     id: 2,
-    image: project4,
+    image: project2,
     title: 'Nursing Quiz App',
     github: '',
     demo: 'https://nursing-quiz-app.vercel.app/',
